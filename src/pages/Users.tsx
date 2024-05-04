@@ -143,7 +143,10 @@ export default function Users() {
         ;(async () => {
             try {
                 const usersIds = getSelectedUserIds(selected)
-                await deleteUsers(usersIds)
+                const res = await deleteUsers(usersIds)
+                if (res.data.redirect) {
+                    return (window.location.href = '/sign-in')
+                }
                 await fetchNSetUsers()
             } catch (error) {
                 showErrorMessage(error)

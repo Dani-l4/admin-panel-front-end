@@ -1,3 +1,3 @@
 export default {
-    API_URL: 'https://admin-panel-back-end-production.up.railway.app',
+    API_URL: import.meta.env.VITE_API_URL,
 }
