@@ -1,3 +1,3 @@
 export default {
-    API_URL: 'https://admin-panel-back-end-production.up.railway.app:3000',
+    API_URL: 'https://admin-panel-back-end-production.up.railway.app',
 }
