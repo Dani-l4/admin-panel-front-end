@@ -24,6 +24,7 @@ export default function CustomTabs() {
                     justifyContent: 'center',
                     display: 'flex',
                     width: '30%',
+                    minWidth: '205px',
                 }}
             >
                 <Tabs
